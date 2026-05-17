@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milwauky Cheruvathur | Unisex Luxury Fashion Boutique</title>
+    
+    <!-- SEO Optimization -->
+    <meta name="description" content="Explore Milwauky Cheruvathur - India's premium unisex luxury fashion store. Handcurated denims, premium track pants, and vintage streetwear edits. All India Free Shipping.">
+    <meta name="keywords" content="milwauky cheruvathur, unisex clothing store, luxury streetwear, premium denim india, vintage trackpants, luxury fashion model">
+    <meta name="author" content="Milwauky Cheruvathur">
+    
+    <!-- Google Fonts: Cormorant Garamond (Vintage Serif) & Plus Jakarta Sans (Modern Sans-Serif) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons for Luxury UI Elements -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Main Style Sheet -->
+    <link rel="stylesheet" href="style.css?v=vhs">
+</head>
+<body>
+
+    <!-- 1. LUXURY ROYAL PRELOADER -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="logo-spinner"></div>
+            <h1 class="preloader-title">MILWAUKY CHERUVATHUR</h1>
+            <p class="preloader-subtitle">EST. 2024 • THE UNISEX COUTURE</p>
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+            <div class="progress-number" id="progress-number">0%</div>
+        </div>
+    </div>
+
+    <!-- 2. FLOATING GLASS NAVIGATION BAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo-link">
+                <!-- Check if logo.png is loaded, else fallback to stylized text -->
+                <img src="logo.png" alt="Milwauky Logo" class="nav-logo" onerror="this.style.display='none'; document.getElementById('nav-logo-text').style.display='block';">
+                <span id="nav-logo-text" class="nav-logo-text" style="display: none;">MILWAUKY</span>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="#" class="nav-link active" data-target="hero">Couture</a></li>
+                <li><a href="#collections" class="nav-link" data-target="collections">Collections</a></li>
+                <li><a href="#catalog" class="nav-link" data-target="catalog">Lookbook</a></li>
+                <li><a href="#cinema" class="nav-link" data-target="cinema">Cinema</a></li>
+                <li><a href="#concierge" class="nav-link" data-target="concierge">Concierge</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="https://instagram.com/milwauky_cheruvathur" target="_blank" class="nav-icon-btn" title="Follow on Instagram" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/917510796740" target="_blank" class="nav-action-btn">
+                    <i class="fab fa-whatsapp"></i> Chat Concierge
+                </a>
+                <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Dropdown Menu -->
+        <div class="mobile-menu" id="mobile-menu">
+            <ul class="mobile-links">
+                <li><a href="#" class="mobile-link" data-target="hero">Couture</a></li>
+                <li><a href="#collections" class="mobile-link" data-target="collections">Collections</a></li>
+                <li><a href="#catalog" class="mobile-link" data-target="catalog">Lookbook</a></li>
+                <li><a href="#cinema" class="mobile-link" data-target="cinema">Cinema</a></li>
+                <li><a href="#concierge" class="mobile-link" data-target="concierge">Concierge</a></li>
+            </ul>
+            <div class="mobile-menu-footer">
+                <div class="mobile-shipping"><i class="fas fa-truck"></i> All India Free Shipping</div>
+                <div class="mobile-socials">
+                    <a href="https://instagram.com/milwauky_cheruvathur" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="tel:+917510796740"><i class="fas fa-phone-alt"></i></a>
+                    <a href="https://wa.me/917510796740" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 3. HERO CINEMATIC SPLIT -->
+    <header class="hero-section" id="hero">
+        <div class="hero-split-container">
+            <!-- Left Hero Editorial Side -->
+            <div class="hero-editorial">
+                <!-- Mobile Background Video (Strictly active on mobile views only) -->
+                <div class="hero-mobile-bg-video">
+                    <video id="hero-mobile-video" class="mobile-bg-video" autoplay muted playsinline>
+                        <source src="product_videos/Denim..Here are a few options for your caption, depending on the vibe you want to go for on your.mp4" type="video/mp4">
+                    </video>
+                    <div class="mobile-bg-overlay"></div>
+                </div>
+
+                <div class="vintage-badge">
+                    <span class="blue-star-svg">
+                        <svg viewBox="0 0 24 24" class="svg-star-icon"><path d="M12,2 L14.8,9.2 L22,12 L14.8,14.8 L12,22 L9.2,14.8 L2,12 L9.2,9.2 Z" fill="#0052ff"/></svg>
+                    </span> 
+                    ESTABLISHED UNISEX ARCHIVE 
+                    <span class="blue-star-svg">
+                        <svg viewBox="0 0 24 24" class="svg-star-icon"><path d="M12,2 L14.8,9.2 L22,12 L14.8,14.8 L12,22 L9.2,14.8 L2,12 L9.2,9.2 Z" fill="#0052ff"/></svg>
+                    </span>
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="title-light">The Curated</span>
+                    <span class="title-bold scribble-relative">
+                        MILWAUKY
+                        <svg class="scribble-svg underline-scribble" viewBox="0 0 300 30" preserveAspectRatio="none">
+                            <path d="M10,20 C80,8 180,8 290,22 M25,25 C100,14 190,14 275,20" />
+                        </svg>
+                    </span>
+                    <span class="title-serif">Cheruvathur</span>
+                </h1>
+                
+                <p class="hero-desc">
+                    A premium unisex fashion capsule house built for the bold. Redefining modern streetwear, distressed raw denims, and signature trackpants.
+                </p>
+                
+                <div class="hero-metrics">
+                    <div class="metric-item">
+                        <span class="metric-num">40.7K</span>
+                        <span class="metric-label">Fashion Collectors</span>
+                    </div>
+                    <div class="metric-item">
+                        <span class="metric-num">2.5K+</span>
+                        <span class="metric-label">Premium Edits</span>
+                    </div>
+                    <div class="metric-item">
+                        <span class="metric-num">Free</span>
+                        <span class="metric-label">India-Wide Delivery</span>
+                    </div>
+                </div>
+
+                <div class="hero-cta-group">
+                    <a href="#catalog" class="btn btn-primary scroll-to-catalog">Explore Lookbook <i class="fas fa-arrow-right"></i></a>
+                    <a href="https://wa.me/917510796740?text=Hello%20Milwauky%20Cheruvathur!%20I%20am%20visiting%20your%20website%20and%20would%20like%20to%20enquire%20about%20your%20premium%20catalog." target="_blank" class="btn btn-secondary">
+                        <i class="fab fa-whatsapp"></i> Chat Ordering
+                    </a>
+                </div>
+
+                <div class="hero-scroll-indicator">
+                    <div class="scroll-mouse">
+                        <div class="scroll-wheel"></div>
+                    </div>
+                    <span>Scroll To Explore</span>
+                </div>
+            </div>
+
+            <!-- Right Hero Cinema Side -->
+            <div class="hero-cinema">
+                <div class="vintage-cinema-frame">
+                    <!-- Corner screw details for physical character -->
+                    <div class="frame-screw top-left"></div>
+                    <div class="frame-screw top-right"></div>
+                    <div class="frame-screw bottom-left"></div>
+                    <div class="frame-screw bottom-right"></div>
+                    
+                    <div class="cinema-screen">
+                        <video id="hero-main-video" class="cinema-video" autoplay loop muted playsinline>
+                            <source id="hero-video-src" src="" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        
+                        <div class="cinema-overlay">
+                            <span class="cinema-tag"><i class="fas fa-video"></i> ON FILM</span>
+                            
+                            <div class="cinema-controls-box">
+                                <button class="cinema-control-btn" id="hero-play-pause" title="Play/Pause Reel">
+                                    <i class="fas fa-pause"></i>
+                                </button>
+                                <button class="cinema-control-btn" id="hero-mute" title="Mute/Unmute Reel">
+                                    <i class="fas fa-volume-mute"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video selector tabs underneath cinema screen -->
+                <div class="video-selector-wrap">
+                    <span class="selector-title">Select Fit Reel:</span>
+                    <div class="video-tabs">
+                        <button class="video-tab active" data-video-index="0">
+                            <span class="tab-index">01</span>
+                            <span class="tab-name">Denim Edits</span>
+                        </button>
+                        <button class="video-tab" data-video-index="1">
+                            <span class="tab-index">02</span>
+                            <span class="tab-name">Couture Motion</span>
+                        </button>
+                        <button class="video-tab" data-video-index="2">
+                            <span class="tab-index">03</span>
+                            <span class="tab-name">Urban Active</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 4. FLOATING INTEGRITY MARQUEE -->
+    <div class="marquee-strip">
+        <div class="marquee-content">
+            <span>ALL INDIA FREE SHIPPING 🚚</span>
+            <span class="marquee-dot"></span>
+            <span>UNISEX PREMIUM APPAREL 📍</span>
+            <span class="marquee-dot"></span>
+            <span>DIRECT DM TO SECURE ORDER 📌</span>
+            <span class="marquee-dot"></span>
+            <span>40.7K INSTAGRAM COMMUNITY ✨</span>
+            <span class="marquee-dot"></span>
+            <span>ENQUIRIES: +91 75107 96740 📞</span>
+            <span class="marquee-dot"></span>
+            
+            <span>ALL INDIA FREE SHIPPING 🚚</span>
+            <span class="marquee-dot"></span>
+            <span>UNISEX PREMIUM APPAREL 📍</span>
+            <span class="marquee-dot"></span>
+            <span>DIRECT DM TO SECURE ORDER 📌</span>
+            <span class="marquee-dot"></span>
+            <span>40.7K INSTAGRAM COMMUNITY ✨</span>
+            <span class="marquee-dot"></span>
+            <span>ENQUIRIES: +91 75107 96740 📞</span>
+            <span class="marquee-dot"></span>
+        </div>
+    </div>
+
+    <!-- 5. THREE CORE COLLECTION CARDS -->
+    <section class="collections-section" id="collections">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-subtitle">THE BLUEPRINT</span>
+                <h2 class="section-title">Signature Collections</h2>
+                <div class="luxury-divider">
+                    <span class="line"></span>
+                    <span class="diamond"></span>
+                    <span class="line"></span>
+                </div>
+            </div>
+            
+            <div class="collections-grid">
+                <!-- Card 1: Denims -->
+                <div class="collection-card" data-category="denims">
+                    <div class="card-bg-wrap">
+                        <div class="card-image-fallback denim-fallback"></div>
+                    </div>
+                    <div class="card-overlay"></div>
+                    <div class="card-content">
+                        <span class="card-meta">Premium Fit</span>
+                        <h3 class="card-title">Vintage Raw Denims</h3>
+                        <p class="card-description">Meticulously structured, distressed washed denim cuts designed for a relaxed, high-profile urban silhouette.</p>
+                        <a href="#catalog" class="card-link select-filter" data-filter="denims">View Collection <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 2: Trackpants -->
+                <div class="collection-card" data-category="trackpants">
+                    <div class="card-bg-wrap">
+                        <div class="card-image-fallback trackpant-fallback"></div>
+                    </div>
+                    <div class="card-overlay"></div>
+                    <div class="card-content">
+                        <span class="card-meta">Active Couture</span>
+                        <h3 class="card-title">Signature Trackpants</h3>
+                        <p class="card-description">Unmatched street comfort meeting athletic dynamics. Engineered from ultra-breathable heavy knit cotton blend.</p>
+                        <a href="#catalog" class="card-link select-filter" data-filter="trackpants">View Collection <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 3: Streetwear -->
+                <div class="collection-card" data-category="streetwear">
+                    <div class="card-bg-wrap">
+                        <div class="card-image-fallback streetwear-fallback"></div>
+                    </div>
+                    <div class="card-overlay"></div>
+                    <div class="card-content">
+                        <span class="card-meta">Oversized Silhouette</span>
+                        <h3 class="card-title">Modern Streetwear</h3>
+                        <p class="card-description">Sophisticated oversized tees, statement bomber jackets, and heavy hoodies crafted to command attention.</p>
+                        <a href="#catalog" class="card-link select-filter" data-filter="streetwear">View Collection <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. CURATED LOOKBOOK & FILTER GRID -->
+    <section class="catalog-section" id="catalog">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-subtitle">THE EXHIBITION</span>
+                <h2 class="section-title">
+                    The Curated 
+                    <span class="scribble-relative">
+                        Lookbook
+                        <svg class="scribble-svg underline-scribble" viewBox="0 0 200 20" preserveAspectRatio="none">
+                            <path d="M5,12 C40,4 120,4 195,15 M15,16 C70,10 135,8 185,13" />
+                        </svg>
+                    </span>
+                </h2>
+                <div class="luxury-divider">
+                    <span class="line"></span>
+                    <span class="diamond"></span>
+                    <span class="line"></span>
+                </div>
+            </div>
+            
+            <!-- Category Filtering Controls -->
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all">All Capsules</button>
+                <button class="filter-btn" data-filter="denims">Vintage Denim</button>
+                <button class="filter-btn" data-filter="trackpants">Onyx Trackpants</button>
+                <button class="filter-btn" data-filter="streetwear">Curated Streetwear</button>
+            </div>
+            
+            <!-- Catalog Grid (Dynamically Populated by script.js) -->
+            <div class="catalog-grid" id="catalog-grid">
+                <!-- Javascript will inject 17 luxury product cards here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. INSTAGRAM REELS CINEMA SECTION -->
+    <section class="cinema-section" id="cinema">
+        <div class="cinema-bg-grain"></div>
+        <div class="section-container">
+            <div class="section-header white-theme">
+                <span class="section-subtitle">MILWAUKY IN MOTION</span>
+                <h2 class="section-title text-white">The Couture Cinema</h2>
+                <p class="section-desc">Experience our signature unisex fits and live drops in motion. Fully responsive video players displaying premium styling cues.</p>
+                <div class="luxury-divider gold">
+                    <span class="line"></span>
+                    <span class="diamond"></span>
+                    <span class="line"></span>
+                </div>
+            </div>
+            
+            <!-- Vertical Reel Cards Stack -->
+            <div class="reels-container">
+                <!-- Reel Card 1 -->
+                <div class="reel-card" data-video-index="0">
+                    <div class="phone-mockup">
+                        <div class="phone-speaker"></div>
+                        <div class="phone-screen">
+                            <video class="reel-video" loop playsinline>
+                                <source id="reel-video-src-0" src="" type="video/mp4">
+                            </video>
+                            <div class="reel-watermark">@milwauky_cheruvathur</div>
+                            <div class="reel-overlay-content">
+                                <span class="fit-tag">01 / DENIM MOVEMENT</span>
+                                <h4 class="fit-name">Heritage Vintage Denim Fit</h4>
+                            </div>
+                            <div class="reel-btn-controls">
+                                <button class="reel-control-btn play-toggle"><i class="fas fa-play"></i></button>
+                                <button class="reel-control-btn sound-toggle"><i class="fas fa-volume-mute"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reel Card 2 -->
+                <div class="reel-card" data-video-index="1">
+                    <div class="phone-mockup">
+                        <div class="phone-speaker"></div>
+                        <div class="phone-screen">
+                            <video class="reel-video" loop playsinline>
+                                <source id="reel-video-src-1" src="" type="video/mp4">
+                            </video>
+                            <div class="reel-watermark">@milwauky_cheruvathur</div>
+                            <div class="reel-overlay-content">
+                                <span class="fit-tag">02 / COUTURE MOTION</span>
+                                <h4 class="fit-name">Signature Cozy Streetwear</h4>
+                            </div>
+                            <div class="reel-btn-controls">
+                                <button class="reel-control-btn play-toggle"><i class="fas fa-play"></i></button>
+                                <button class="reel-control-btn sound-toggle"><i class="fas fa-volume-mute"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reel Card 3 -->
+                <div class="reel-card" data-video-index="2">
+                    <div class="phone-mockup">
+                        <div class="phone-speaker"></div>
+                        <div class="phone-screen">
+                            <video class="reel-video" loop playsinline>
+                                <source id="reel-video-src-2" src="" type="video/mp4">
+                            </video>
+                            <div class="reel-watermark">@milwauky_cheruvathur</div>
+                            <div class="reel-overlay-content">
+                                <span class="fit-tag">03 / ACTIVE SILHOUETTE</span>
+                                <h4 class="fit-name">Urban Trackpant Activewear</h4>
+                            </div>
+                            <div class="reel-btn-controls">
+                                <button class="reel-control-btn play-toggle"><i class="fas fa-play"></i></button>
+                                <button class="reel-control-btn sound-toggle"><i class="fas fa-volume-mute"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. THE CONCIERGE & WHATSAPP ORDER MATRIX -->
+    <section class="concierge-section" id="concierge">
+        <div class="section-container">
+            <div class="concierge-grid">
+                <!-- Branding Card -->
+                <div class="concierge-info">
+                    <span class="sub">BESPOKE CONCIERGE</span>
+                    <h2>How to Order</h2>
+                    <p class="info-text">
+                        Every single item in our unisex inventory is curated as an exclusive limited drop. To secure your size, we operate a premium <strong>Direct WhatsApp Concierge booking system</strong>.
+                    </p>
+                    
+                    <div class="step-list">
+                        <div class="step-item">
+                            <span class="step-num">01</span>
+                            <div class="step-detail">
+                                <h5>Explore & Select</h5>
+                                <p>Scroll through our catalog lookbook and tap on any fit to view detailed specs.</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <span class="step-num">02</span>
+                            <div class="step-detail">
+                                <h5>Pick Your Fit</h5>
+                                <p>Select your exact waist, height, or standard chest size using our size matrix.</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <span class="step-num">03</span>
+                            <div class="step-detail">
+                                <h5>WhatsApp Reservation</h5>
+                                <p>Tap "Reserve via WhatsApp". We will prepopulate your request automatically. Connect instantly with our ordering team!</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="free-shipping-card">
+                        <i class="fas fa-truck-moving shipping-icon"></i>
+                        <div>
+                            <h4>All India Free Shipping Included</h4>
+                            <p>No delivery fees on orders placed today. Complete tracked courier direct to your doorstep.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Quick Enquiry Form -->
+                <div class="concierge-form-card">
+                    <h3>Direct Enquiry Concierge</h3>
+                    <p>Have questions about fits, exact measurements, or stock? Leave details below and our team will coordinate via phone or WhatsApp.</p>
+                    
+                    <form id="enquiry-form">
+                        <div class="form-group">
+                            <label for="client-name">Your Full Name</label>
+                            <input type="text" id="client-name" name="name" required placeholder="e.g. Sreenand Karichery">
+                        </div>
+                        <div class="form-group">
+                            <label for="client-phone">Phone / WhatsApp Number</label>
+                            <input type="tel" id="client-phone" name="phone" required placeholder="e.g. +91 XXXXX XXXXX">
+                        </div>
+                        <div class="form-group">
+                            <label for="enquiry-message">What fits are you looking for?</label>
+                            <textarea id="enquiry-message" name="message" rows="4" placeholder="Mention sizes, product details, or custom preferences..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fab fa-whatsapp"></i> Initiate Order Discussion
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. IMMERSIVE SIDE DETAILS DRAWER (MODAL) -->
+    <div class="product-drawer" id="product-drawer">
+        <div class="drawer-overlay" id="drawer-overlay"></div>
+        <div class="drawer-content">
+            <button class="drawer-close" id="drawer-close" aria-label="Close Details">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <div class="drawer-scroll-area">
+                <div class="drawer-image-container">
+                    <img id="drawer-product-image" src="" alt="Active Product Shot">
+                </div>
+                
+                <div class="drawer-details">
+                    <span class="drawer-product-category" id="drawer-product-category">CATEGORY</span>
+                    <h3 class="drawer-product-title" id="drawer-product-title">Product Title</h3>
+                    
+                    <div class="drawer-product-price" id="drawer-product-price">₹1,299</div>
+                    
+                    <div class="drawer-shipping-badge">
+                        <i class="fas fa-check-circle"></i> In Stock & Free All-India Delivery
+                    </div>
+                    
+                    <div class="drawer-size-section">
+                        <label class="size-label">Select Waist / Fit Size:</label>
+                        <div class="drawer-sizes-grid" id="drawer-sizes-grid">
+                            <!-- Injected dynamically based on category -->
+                        </div>
+                    </div>
+                    
+                    <div class="drawer-specs">
+                        <div class="spec-tab active">Details</div>
+                        <div class="spec-pane">
+                            <p id="drawer-product-description">Premium quality product, hand-crafted styling, heavy wash denim or cotton-rich performance fabric. Fully tailored details.</p>
+                            <ul class="spec-list">
+                                <li><i class="fas fa-circle-check"></i> Standard Unisex Fit</li>
+                                <li><i class="fas fa-circle-check"></i> Double Stitched Hemlines</li>
+                                <li><i class="fas fa-circle-check"></i> Zero Shrinkage Preserved</li>
+                                <li><i class="fas fa-circle-check"></i> Pre-shrunk Organic Blend</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-primary btn-block drawer-order-btn" id="drawer-whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> Reserve via WhatsApp Concierge
+                    </button>
+                    
+                    <a href="tel:+917510796740" class="drawer-phone-link">
+                        <i class="fas fa-phone-alt"></i> Call Hotline: +91 75107 96740
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 10. LUXURY EDITORIAL FOOTER -->
+    <footer class="footer">
+        <div class="section-container">
+            <div class="footer-grid">
+                <!-- Branding column -->
+                <div class="footer-brand">
+                    <h2 class="footer-brand-title">MILWAUKY CHERUVATHUR</h2>
+                    <p class="footer-bio">
+                        Fashion Model & Curated Unisex Streetwear House. Premium tailoring, modern oversized cuts, and select denim. All India tracked delivery.
+                    </p>
+                    <div class="footer-socials-list">
+                        <a href="https://instagram.com/milwauky_cheruvathur" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/917510796740" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="tel:+917510796740"><i class="fas fa-phone-alt"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Quick links -->
+                <div class="footer-links-col">
+                    <h4>Direct Access</h4>
+                    <ul>
+                        <li><a href="#" class="footer-link">Home Couture</a></li>
+                        <li><a href="#collections" class="footer-link">Signature Collections</a></li>
+                        <li><a href="#catalog" class="footer-link">Lookbook Archive</a></li>
+                        <li><a href="#cinema" class="footer-link">Couture Cinema</a></li>
+                        <li><a href="#concierge" class="footer-link">Concierge Ordering</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contacts / Details -->
+                <div class="footer-links-col">
+                    <h4>Bespoke Support</h4>
+                    <ul>
+                        <li><span class="support-text"><i class="fas fa-truck"></i> Free All India Delivery</span></li>
+                        <li><span class="support-text"><i class="fas fa-clock"></i> Response Time: ~15 mins</span></li>
+                        <li><span class="support-text"><i class="fas fa-phone-alt"></i> +91 75107 96740</span></li>
+                        <li><span class="support-text"><i class="fas fa-envelope"></i> orders@milwauky.com</span></li>
+                    </ul>
+                </div>
+                
+                <!-- Instagram Card info -->
+                <div class="footer-instagram-card">
+                    <h4>Social Catalogue</h4>
+                    <div class="insta-stats">
+                        <div class="stat"><span class="num">2.5K+</span><span>Posts</span></div>
+                        <div class="stat"><span class="num">40.7K</span><span>Followers</span></div>
+                        <div class="stat"><span class="num">2</span><span>Following</span></div>
+                    </div>
+                    <a href="https://instagram.com/milwauky_cheruvathur" target="_blank" class="btn btn-secondary btn-block text-center mt-3">
+                        <i class="fab fa-instagram"></i> Visit Instagram Profile
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 Milwauky Cheruvathur. All Rights Reserved.</p>
+                <p class="dev-credits">Designed & Developed by <a href="#" class="credit-link">Antigravity</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- GSAP CDN (Core) & ScrollTrigger CDN for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Main JavaScript Logic -->
+    <script src="script.js?v=vhs"></script>
+</body>
+</html>
