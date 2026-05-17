@@ -2098,10 +2098,18 @@ video {
     .mobile-nav-toggle { display: flex; z-index: 1001; }
     .nav-links, .nav-actions .nav-action-btn { display: none; }
     
+    .hero-section {
+        min-height: auto !important;
+        padding-top: 95px !important;
+        padding-bottom: 50px !important;
+        background-color: #000000 !important;
+    }
+    
     .hero-split-container {
         grid-template-columns: 1fr;
-        gap: 50px;
-        padding-top: 20px;
+        gap: 40px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
     
     .hero-editorial {
