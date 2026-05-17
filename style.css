@@ -2327,7 +2327,7 @@ video {
     
     /* Elegant 2-column e-commerce products grid */
     .catalog-grid {
-        grid-template-columns: repeat(2, 1fr) !important;
+        grid-template-columns: 1fr !important;
         gap: 12px !important;
         padding: 0 4% !important;
     }
