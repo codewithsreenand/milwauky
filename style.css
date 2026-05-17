@@ -2249,22 +2249,98 @@ video {
     .preloader-title { font-size: 1.8rem; letter-spacing: 0.25rem; }
     .preloader-subtitle { letter-spacing: 0.2rem; }
     
-    .hero-title .title-light { font-size: 1.5rem; }
-    .hero-title .title-bold { font-size: 2.8rem; letter-spacing: 2px; }
-    .hero-title .title-serif { font-size: 2.2rem; }
+    .hero-title .title-light { font-size: 1.4rem; }
+    .hero-title .title-bold { font-size: 2.6rem; letter-spacing: 2px; }
+    .hero-title .title-serif { font-size: 2.0rem; }
     .hero-cta-group { flex-direction: column; gap: 10px; }
     .hero-cta-group .btn { width: 100%; }
-    .hero-metrics { gap: 20px; }
-    .metric-num { font-size: 1.4rem; }
+    .hero-metrics { gap: 15px; }
+    .metric-num { font-size: 1.25rem; }
+    .metric-label { font-size: 0.55rem; }
     
-    .section-title { font-size: 2rem; }
-    .catalog-grid { grid-template-columns: 1fr; }
-    .filter-controls { flex-wrap: wrap; gap: 8px; }
-    .filter-btn { padding: 8px 16px; font-size: 0.65rem; width: 48%; }
+    /* Section Padding reductions for true e-commerce feel */
+    .collections-section, .cinema-section, .concierge-section, .about-section {
+        padding: 45px 0 !important;
+    }
+    .section-header {
+        margin-bottom: 25px !important;
+    }
+    .section-title { font-size: 1.7rem !important; }
+    .section-desc { font-size: 0.8rem !important; }
     
-    .concierge-form-card { padding: 25px; }
-    .drawer-details { padding: 20px; }
-    .drawer-product-title { font-size: 1.6rem; }
+    /* Swipeable e-commerce horizontal filter controls */
+    .filter-controls {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch !important;
+        padding: 5px 4% 15px 4% !important;
+        gap: 8px !important;
+        width: 100% !important;
+        justify-content: flex-start !important;
+    }
+    .filter-controls::-webkit-scrollbar {
+        display: none !important;
+    }
+    .filter-btn {
+        flex: 0 0 auto !important;
+        width: auto !important;
+        padding: 6px 14px !important;
+        font-size: 0.68rem !important;
+        margin: 0 !important;
+    }
+    
+    /* Elegant 2-column e-commerce products grid */
+    .catalog-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 12px !important;
+        padding: 0 4% !important;
+    }
+    
+    /* Tailor product cards inside tight 2-column layout */
+    .product-info {
+        padding: 10px 6px !important;
+    }
+    .product-title {
+        font-size: 0.78rem !important;
+        margin-bottom: 3px !important;
+        line-height: 1.25 !important;
+    }
+    .product-meta {
+        margin-top: 3px !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 2px !important;
+    }
+    .product-price {
+        font-size: 0.85rem !important;
+    }
+    .product-sizes-badge {
+        font-size: 0.52rem !important;
+        padding: 1px 3px !important;
+    }
+    
+    .concierge-form-card { padding: 20px; }
+    .drawer-details { padding: 15px; }
+    .drawer-product-title { font-size: 1.4rem; }
+    
+    /* Bulletproof mobile-closing button UX */
+    .drawer-close {
+        left: auto !important;
+        right: 15px !important;
+        top: 15px !important;
+        width: 40px !important;
+        height: 40px !important;
+        border-radius: 50% !important;
+        background: var(--color-white) !important;
+        color: var(--color-navy) !important;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.12) !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        z-index: 1000 !important;
+        border: 1px solid rgba(0,0,0,0.06) !important;
+    }
     
     .footer-grid { grid-template-columns: 1fr; gap: 30px; }
     .footer-bottom { flex-direction: column; text-align: center; }
