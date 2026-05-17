@@ -359,8 +359,6 @@ video {
     width: 48px;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid var(--color-accent-blue);
-    box-shadow: 0 0 10px rgba(0, 82, 255, 0.25);
     transition: var(--transition-smooth);
 }
 
