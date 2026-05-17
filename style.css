@@ -2268,9 +2268,25 @@ video {
     .preloader-title { font-size: 1.8rem; letter-spacing: 0.25rem; }
     .preloader-subtitle { letter-spacing: 0.2rem; }
     
-    .hero-title .title-light { font-size: 1.4rem; }
-    .hero-title .title-bold { font-size: 2.6rem; letter-spacing: 2px; }
-    .hero-title .title-serif { font-size: 2.0rem; }
+    .hero-title .title-light {
+    font-size: clamp(1.2rem, 6vw, 1.8rem);
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+.hero-title .title-bold {
+    font-size: clamp(2rem, 10vw, 3rem);
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--color-text-dark);
+    text-transform: uppercase;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
     .hero-cta-group { flex-direction: column; gap: 10px; }
     .hero-cta-group .btn { width: 100%; }
     .hero-metrics { gap: 15px; }
