@@ -2138,6 +2138,11 @@ video {
         padding-bottom: 10px;
     }
     
+    .hero-title .title-light { font-size: 1.8rem !important; }
+    .hero-title .title-bold { font-size: 3.8rem !important; letter-spacing: 3px !important; }
+    .hero-title .title-serif { font-size: 2.8rem !important; }
+    .section-title { font-size: 2.3rem !important; }
+    
     .hero-editorial {
         position: relative;
         text-align: center;
@@ -2240,7 +2245,13 @@ video {
     
     .hero-cta-group { width: 100%; justify-content: center; }
     
-    .collections-grid { grid-template-columns: 1fr; max-width: 500px; margin: 0 auto; }
+    .collections-grid { 
+        grid-template-columns: 1fr !important; 
+        max-width: 650px !important; 
+        margin: 0 auto !important; 
+        width: 100% !important; 
+        padding: 0 4% !important; 
+    }
     .catalog-grid { grid-template-columns: repeat(2, 1fr); }
     
     .concierge-grid { grid-template-columns: 1fr; gap: 50px; }
