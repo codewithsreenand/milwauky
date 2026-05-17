@@ -2143,9 +2143,9 @@ video {
         padding-bottom: 10px;
     }
     
-    .hero-title .title-light { font-size: 1.8rem !important; }
-    .hero-title .title-bold { font-size: 3.8rem !important; letter-spacing: 3px !important; }
-    .hero-title .title-serif { font-size: 2.8rem !important; }
+    .hero-title .title-light { font-size: clamp(0.9rem, 5vw, 1.4rem) !important; }
+.hero-title .title-bold { font-size: clamp(1.6rem, 8vw, 2.4rem) !important; letter-spacing: 2px !important; }
+.hero-title .title-serif { font-size: clamp(1.2rem, 6vw, 1.8rem) !important; }
     .section-title { font-size: 2.3rem !important; }
     
     .hero-editorial {
@@ -2269,7 +2269,7 @@ video {
     .preloader-subtitle { letter-spacing: 0.2rem; }
     
     .hero-title .title-light {
-    font-size: clamp(1.2rem, 6vw, 1.8rem);
+    font-size: clamp(0.9rem, 5vw, 1.4rem);
     font-weight: 300;
     letter-spacing: 2px;
     color: var(--color-text-muted);
@@ -2279,7 +2279,7 @@ video {
 }
 
 .hero-title .title-bold {
-    font-size: clamp(2rem, 10vw, 3rem);
+    font-size: clamp(1.6rem, 9vw, 2.5rem);
     font-weight: 700;
     letter-spacing: 2px;
     color: var(--color-text-dark);
