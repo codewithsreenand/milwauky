@@ -2303,6 +2303,22 @@ video {
     .section-title { font-size: 1.7rem !important; }
     .section-desc { font-size: 0.8rem !important; }
     
+    /* Film section controls mobile fix */
+    .reel-btn-controls {
+        z-index: 20 !important;
+        opacity: 1 !important; /* Make always visible on mobile */
+    }
+    .reel-overlay-content {
+        z-index: 5 !important;
+        padding: 15px 15px !important; /* Adjust padding so it doesn't cover too much */
+    }
+    .reel-control-btn {
+        width: 50px !important;
+        height: 50px !important;
+        font-size: 1.1rem !important;
+        background-color: rgba(0, 0, 0, 0.4) !important; /* Darker bg for visibility */
+    }
+    
     /* Swipeable e-commerce horizontal filter controls */
     .filter-controls {
         display: flex !important;
