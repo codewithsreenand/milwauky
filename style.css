@@ -2094,7 +2094,30 @@ video {
 }
 
 @media (max-width: 991px) {
-    .navbar { height: 75px; }
+    .navbar { 
+        height: 75px; 
+        background-color: rgba(0, 0, 0, 0.65) !important;
+        backdrop-filter: blur(20px) !important;
+        -webkit-backdrop-filter: blur(20px) !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3) !important;
+    }
+    .navbar.scrolled {
+        background-color: rgba(0, 0, 0, 0.8) !important;
+        backdrop-filter: blur(20px) !important;
+        -webkit-backdrop-filter: blur(20px) !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12) !important;
+    }
+    .nav-logo-text {
+        color: var(--color-white) !important;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    }
+    .mobile-nav-toggle span {
+        background-color: var(--color-white) !important;
+    }
+    .nav-actions .nav-icon-btn {
+        color: var(--color-white) !important;
+    }
     .mobile-nav-toggle { display: flex; z-index: 1001; }
     .nav-links, .nav-actions .nav-action-btn { display: none; }
     
@@ -2139,7 +2162,7 @@ video {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        opacity: 0.45;
+        opacity: 0.70 !important;
     }
     
     .mobile-bg-overlay {
@@ -2148,7 +2171,7 @@ video {
         left: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0.9) 100%);
+        background: radial-gradient(circle, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.70) 55%, rgba(0, 0, 0, 0.92) 100%) !important;
         z-index: 2;
     }
     
