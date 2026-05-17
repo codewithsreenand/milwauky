@@ -490,7 +490,7 @@ video {
     height: 100vh;
     background-color: #0c0d12;
     border-left: 1px solid rgba(255, 255, 255, 0.08);
-    z-index: 999;
+    z-index: 10000;
     padding: 120px 40px 40px;
     box-shadow: -15px 0 45px rgba(0, 0, 0, 0.4);
     display: flex;
@@ -2126,7 +2126,7 @@ video {
     .nav-actions .nav-icon-btn {
         color: var(--color-white) !important;
     }
-    .mobile-nav-toggle { display: flex; z-index: 1001; }
+    .mobile-nav-toggle { display: flex; z-index: 10001; }
     .nav-links, .nav-actions .nav-action-btn { display: none; }
     
     .hero-section {
