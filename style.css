@@ -2143,9 +2143,9 @@ video {
         padding-bottom: 10px;
     }
     
-    .hero-title .title-light { font-size: clamp(0.9rem, 5vw, 1.4rem) !important; }
-.hero-title .title-bold { font-size: clamp(1.6rem, 8vw, 2.4rem) !important; letter-spacing: 2px !important; }
-.hero-title .title-serif { font-size: clamp(1.2rem, 6vw, 1.8rem) !important; }
+    .hero-title .title-light { font-size: clamp(1.0rem, 5vw, 1.5rem) !important; }
+.hero-title .title-bold { font-size: clamp(1.8rem, 8vw, 2.6rem) !important; letter-spacing: 2px !important; }
+.hero-title .title-serif { font-size: clamp(1.3rem, 6vw, 2.0rem) !important; }
     .section-title { font-size: 2.3rem !important; }
     
     .hero-editorial {
