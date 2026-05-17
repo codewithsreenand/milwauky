@@ -487,7 +487,9 @@ video {
     right: -100%;
     width: 80%;
     max-width: 320px;
-    height: 100vh;
+    height: 100vh; /* Fallback */
+    height: 100%;
+    height: -webkit-fill-available;
     background-color: #0c0d12;
     border-left: 1px solid rgba(255, 255, 255, 0.08);
     z-index: 10000;
@@ -496,6 +498,7 @@ video {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow-y: auto;
     transition: var(--transition-smooth);
 }
 
@@ -2289,6 +2292,7 @@ video {
 }
     .hero-cta-group { flex-direction: column; gap: 10px; }
     .hero-cta-group .btn { width: 100%; }
+    .hero-cta-group .btn-secondary { color: #ffffff !important; border-color: rgba(255, 255, 255, 0.4) !important; }
     .hero-metrics { gap: 15px; }
     .metric-num { font-size: 1.25rem; }
     .metric-label { font-size: 0.55rem; }
